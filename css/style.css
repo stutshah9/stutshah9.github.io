@@ -1,7 +1,7 @@
 :root {
     --primaryText: #fff;
-    --secondaryText: #ff015e;
-    --primary: rgba(245, 9, 66, 0.8);
+    --secondaryText: rgba(245, 0, 47, 0.87);
+    --primary: rgba(245, 0, 47, 0.87);
     --secondary: rgba(255, 1, 94, .60); 
     --buttonHover: rgba(156, 39, 176, .40);
     --smallButtonHover: rgba(0, 0, 0, .25);
