@@ -1,6 +1,7 @@
 :root {
     --primaryText: #fff;
     --secondaryText: rgba(245, 0, 47, 0.87);
+    /* I selected colors that complement my profile image. The tones of red gradually become lighter as you progress from simply hovering over the button to clicking it */
     --primary: rgba(245, 0, 47, 0.87);
     --secondary: rgba(245, 0, 47, 0.61); 
     --buttonHover: rgba(245, 0, 47, 0.42);
