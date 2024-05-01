@@ -1,6 +1,6 @@
 :root {
     --primaryText: #fff;
-    --secondaryText: rgba(245, 0, 47, 0.87);
+    --secondaryText: rgb(245, 0, 49);
     /* I selected colors that complement my profile image. The tones of red gradually become lighter as you progress from simply hovering over the button to clicking it */
     --primary: rgba(245, 0, 47, 0.87);
     --secondary: rgba(245, 0, 47, 0.61); 
@@ -27,7 +27,7 @@ body {
     min-height: 100%;
     /* The image used for the site background. Try changing skyscape.jpg to stars.jpg. Put a replacement photo in the images folder and, in line 21 below, replace skyscape.jpg with yourbackgroundfilename.jpg */
     /* The linear gradient darkens the image, like putting a sunglasses lens on top of it. If you want to darken the image even more, change 0.1 (both times) to 0.3 or higher */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/background1.jpg);
     /* Prevents the browser from repeating or "tiling" the background image */
     background-repeat: no-repeat;
     background-position: center;
