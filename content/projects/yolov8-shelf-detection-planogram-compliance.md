@@ -23,4 +23,4 @@ I built an end-to-end YOLOv8 pipeline with curated public datasets, class-aware 
 ## Links
 
 - GitHub: [out-of-stock-detection](https://github.com/yoonlee201/out-of-stock-detection)
-<!-- - Report: [TODO - add report link](https://example.com/TODO-yolov8-report) -->
+- Report: [TODO - add report link](https://example.com/TODO-yolov8-report)

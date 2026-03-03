@@ -22,5 +22,4 @@ I implemented an Android MVVM app with Room-based local persistence, lifecycle-a
 
 ## Links
 
-<!-- - GitHub: [TODO - add repository link](https://code.vt.edu/schamilton/location-aware-tasks) -->
 - Report: [Location_Aware_Task_Management.pdf](/static/attachments/Location_Aware_Task_Management.pdf)

@@ -22,5 +22,5 @@ I implemented a multimodal probabilistic pipeline that fuses earnings-call trans
 
 ## Links
 
-<!-- - GitHub: [out-of-stock-detection]()
-- Report: [TODO - add report link](https://example.com/TODO-multimodal-forecasting-report) -->
+- GitHub: [TODO - add repository link](https://github.com/TODO-stuti-shah/multimodal-stock-return-forecasting)
+- Report: [TODO - add report link](https://example.com/TODO-multimodal-forecasting-report)
