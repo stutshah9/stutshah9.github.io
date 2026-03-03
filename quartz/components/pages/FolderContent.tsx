@@ -95,6 +95,7 @@ export default ((opts?: Partial<FolderContentOptions>) => {
       sort: options.sort,
       allFiles: allPagesInFolder,
     }
+    const showFolderListing = fileData.frontmatter?.showFolderListing !== false
 
     const content = (
       (tree as Root).children.length === 0
@@ -105,18 +106,20 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     return (
       <div class="popover-hint">
         <article class={classes}>{content}</article>
-        <div class="page-listing">
-          {options.showFolderCount && (
-            <p>
-              {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
-                count: allPagesInFolder.length,
-              })}
-            </p>
-          )}
-          <div>
-            <PageList {...listProps} />
+        {showFolderListing && (
+          <div class="page-listing">
+            {options.showFolderCount && (
+              <p>
+                {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
+                  count: allPagesInFolder.length,
+                })}
+              </p>
+            )}
+            <div>
+              <PageList {...listProps} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     )
   }
