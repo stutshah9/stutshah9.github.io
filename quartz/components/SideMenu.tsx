@@ -6,6 +6,7 @@ const links: Array<{ label: string; slug: FullSlug }> = [
   { label: "Education", slug: "education" as FullSlug },
   { label: "Experience", slug: "experience" as FullSlug },
   { label: "Projects", slug: "projects" as FullSlug },
+  { label: "Resumes", slug: "resumes" as FullSlug },
   { label: "Skills", slug: "skills" as FullSlug },
 ]
 
