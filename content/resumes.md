@@ -4,7 +4,7 @@ description: Preview different resume versions for software engineering, machine
 ---
 
 <div class="resume-gallery">
-  <details class="resume-card" open>
+  <details class="resume-card">
     <summary class="resume-card-summary">
       <span class="resume-card-title">Software Engineering Resume</span>
       <span class="resume-card-sub">Focused on backend, product engineering, and general software roles.</span>
