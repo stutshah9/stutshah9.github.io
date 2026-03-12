@@ -12,7 +12,3 @@ Outside core backend development, I am interested in applied machine learning, e
 I am currently looking for software engineering roles where I can contribute to backend platforms, product-facing APIs, and ML-enabled systems. The environments I thrive in are teams that care about execution quality, thoughtful iteration, and measurable user or operational impact.
 
 My strongest technical interests are distributed backend engineering, AI/ML integration in production software, and data-informed product development.
-
-<!-- <div class="note-soft">
-  Resume download: <a class="resume-download" href="/static/resume/stuti-shah-resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a><br />
-</div> -->
