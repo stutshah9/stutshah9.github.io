@@ -3,13 +3,15 @@ title: Experience
 description: Professional experience timeline
 ---
 
+I like roles where I can own a system end-to-end, remove manual bottlenecks, and ship tooling that teams trust. Here are the roles that shaped that approach.
+
 <div class="timeline">
   <div class="timeline-item">
     <p class="timeline-role"><strong>Software Engineering Intern</strong>, Volvo Group</p>
     <p class="timeline-meta">Greensboro, NC | May 2025 - Aug 2025</p>
     <ul>
-      <li>Built distributed web applications using Python, Flask, PostgreSQL, and Kubernetes, and standardized deployment through GitOps with Argo CD to keep environments reproducible and release behavior predictable.</li>
-      <li>Designed and deployed automated engineering services that reduced workflow execution from 4 hours to under 6 minutes, directly supporting $176,980 in annual operational savings and removing repetitive manual handoffs.</li>
+      <li>Built distributed web applications using Python, Flask, PostgreSQL, and Kubernetes, and standardized deployment through GitOps with Argo CD so releases stayed reproducible and predictable.</li>
+      <li>Designed and deployed automated engineering services that cut workflow execution from 4 hours to under 6 minutes, directly supporting $176,980 in annual operational savings and removing repetitive manual handoffs.</li>
       <li>Developed secure REST APIs to integrate high-volume vehicle test data with analytics workflows, enabling sub-second querying, stronger traceability across datasets, and faster turnaround for engineering investigations.</li>
       <li>Integrated machine learning models into product-facing workflows, including Random Forest-based component performance and emissions prediction, so teams could evaluate outcomes earlier from operational dashboards.</li>
     </ul>
@@ -20,7 +22,7 @@ description: Professional experience timeline
     <p class="timeline-meta">Bangkok, Thailand | Jun 2024 - Aug 2024</p>
     <ul>
       <li>Automated AI-driven test case generation and execution for enterprise CRM systems, improving software quality metrics by 20% while increasing coverage on flows that were previously under-tested.</li>
-      <li>Applied AI-powered testing tools across frontend and backend workflows, which reduced regression risk and helped detect behavior drift before production rollouts.</li>
+      <li>Applied AI-powered testing tools across frontend and backend workflows to reduce regression risk and detect behavior drift before production rollouts.</li>
       <li>Integrated automated testing into CI pipelines to shorten feedback loops, surface failures earlier in development, and improve release reliability across distributed deployments.</li>
     </ul>
   </div>

@@ -4,7 +4,9 @@ description: Engineering projects and technical details
 showFolderListing: false
 ---
 
-## Current Projects
+Welcome to the menu. Each project is written like a recipe: ingredients, method, and the lessons learned along the way.
+
+## Fresh From The Kitchen
 
 <div class="project-grid">
   <article class="project-card">
@@ -24,7 +26,7 @@ showFolderListing: false
   </article>
 </div>
 
-## Past Projects
+## From The Archives
 
 <div class="project-grid">
   <article class="project-card">
