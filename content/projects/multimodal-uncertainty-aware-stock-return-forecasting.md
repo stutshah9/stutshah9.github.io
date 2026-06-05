@@ -7,44 +7,36 @@ tags:
   - forecasting
 ---
 
-Post-earnings markets are noisy, and I wanted a model that could say how sure it was, not just a direction. This project explores next-day post-earnings stock return forecasting in a setting where prediction confidence is as important as directional output. Market behavior after earnings calls is influenced by multiple interacting signals, and single-source approaches can look accurate in isolated cases while still producing unreliable confidence under distribution shifts.
-
-I built a multimodal probabilistic pipeline that fuses earnings-call transcript features, financial indicators, and social sentiment through a cross-attention architecture designed for signal interaction rather than simple feature concatenation. The workflow emphasized calibration with ECE and conformal intervals so uncertainty could be measured directly and interpreted in decision-oriented terms. That made the project useful not only as a forecasting exercise, but also as a framework for evaluating confidence-aware behavior in event-driven financial modeling.
-
-<div class="recipe-meta">
-  <span><strong>Yield</strong> Confidence-aware forecasts</span>
-  <span><strong>Primary signals</strong> Transcripts, indicators, sentiment</span>
-  <span><strong>Technique</strong> Cross-attention + conformal calibration</span>
+<div class="project-detail-hero">
+  <p class="project-eyebrow">Machine Learning / NLP / Forecasting</p>
+  <p class="project-hero-copy">A confidence-aware forecasting pipeline for next-day post-earnings stock returns, combining transcript, market, and social sentiment signals.</p>
+  <div class="project-detail-meta">
+    <span><strong>Focus</strong> Probabilistic forecasting</span>
+    <span><strong>Signals</strong> Transcripts, indicators, sentiment</span>
+    <span><strong>Modeling</strong> Cross-attention + conformal calibration</span>
+  </div>
 </div>
 
-## Why I Cooked This
+## Overview
 
-I wanted a forecasting system that treats uncertainty as a first-class output. In event-driven finance, a well-calibrated "I am not sure" is more useful than a confident but fragile prediction.
+Post-earnings markets are noisy, and I wanted a model that could communicate uncertainty instead of only returning a directional prediction. The project explores next-day return forecasting in a setting where confidence, calibration, and risk-aware interpretation matter as much as raw accuracy.
 
-## Method
+I built a multimodal pipeline that fuses earnings-call transcript features, financial indicators, and social sentiment through a cross-attention architecture. The workflow emphasized calibrated prediction intervals so model confidence could be measured and interpreted directly.
 
-- Encoded long earnings call transcripts with FinBERT using 256-512 token chunks, cached frozen embeddings, and projected text into a shared multimodal embedding space.
-- Engineered structured inputs from earnings surprise, price momentum, implied volatility, and Reddit sentiment using TextBlob polarity and log message-volume features.
-- Implemented a PyTorch cross-modal fusion model with multi-head attention across transcript, financial, and sentiment tokens and quantile heads trained with pinball loss.
-- Applied conformalized quantile regression with global, event-conditioned, and modality-disagreement-normalized calibration to generate 80%, 90%, and 95% prediction intervals.
-- Evaluated multimodal and single-modality ablations against same-ticker historical baselines using coverage, interval width, calibration error, MAE, RMSE, and directional accuracy.
+## Technical Work
 
-## Tasting Notes
+- Encoded long earnings call transcripts with FinBERT using chunked text embeddings projected into a shared multimodal representation.
+- Engineered structured features from earnings surprise, price momentum, implied volatility, Reddit sentiment, and message-volume signals.
+- Implemented a PyTorch fusion model with multi-head attention across transcript, financial, and sentiment tokens.
+- Trained quantile heads with pinball loss and applied conformalized quantile regression for 80%, 90%, and 95% prediction intervals.
+- Evaluated multimodal and single-modality ablations using coverage, interval width, calibration error, MAE, RMSE, and directional accuracy.
 
-- Calibration changed the conversation from accuracy to decision risk.
-- Cross-attention helped align signals that were noisy on their own.
-- Strong baselines and ablations kept the multimodal story honest.
+## Outcome
 
-## Ingredients
+- Treated uncertainty as a first-class model output rather than a post-processing detail.
+- Used calibration analysis to distinguish useful confidence from brittle directional predictions.
+- Built a comparison framework that made ablations and baseline performance easier to reason about.
 
-- Python
-- Multimodal feature pipeline (text + numeric + sentiment)
-- Cross-attention model architecture
-- Probabilistic forecasting formulation
-- ECE-based calibration analysis
-- Conformal prediction intervals
-
-## Serve With
+## Links
 
 - GitHub: [Stock-Return-Forecasting](https://github.com/stutshah9/Stock-Return-Forecasting)
-<!-- - Report: [TODO - add report link](https://example.com/TODO-multimodal-forecasting-report) -->

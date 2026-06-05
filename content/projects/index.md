@@ -4,9 +4,9 @@ description: Engineering projects and technical details
 showFolderListing: false
 ---
 
-Welcome to the menu. Each project is written like a recipe: ingredients, method, and the lessons learned along the way.
+Selected projects across machine learning, full-stack engineering, mobile development, and data-driven systems.
 
-## Fresh From The Kitchen
+## Featured Projects
 
 <div class="project-grid">
   <article class="project-card">
@@ -26,7 +26,7 @@ Welcome to the menu. Each project is written like a recipe: ingredients, method,
   </article>
 </div>
 
-## From The Archives
+## Additional Projects
 
 <div class="project-grid">
   <article class="project-card">

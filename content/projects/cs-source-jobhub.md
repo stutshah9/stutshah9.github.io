@@ -7,31 +7,36 @@ tags:
   - mysql
 ---
 
-## Why I Cooked This
-
-CS Source JobHub was built as a centralized platform to improve how employers connect with Virginia Tech computer science students. Instead of relying on scattered communication channels and manual coordination, the platform brings key workflows into one interface where employers can manage contacts, register for events, and send student announcements. The goal was to make employer engagement clearer and faster while improving the experience for both company representatives and students.
-
-## Method
-
-I worked on the platform update that introduced contact management, event signup integration, student announcement creation, and an improved employer login experience. The implementation used a Node.js, Express, and Flask-based approach to support flexible frontend/backend development and reliable CRUD operations on user and contact data. Team development was split across frontend, backend, and authentication/login responsibilities, and user testing feedback highlighted strong load performance, smooth navigation, and an intuitive workflow for common employer actions.
-
-<div class="recipe-meta">
-  <span><strong>Yield</strong> Employer engagement workflows</span>
-  <span><strong>Primary signals</strong> Contacts, memberships, events</span>
-  <span><strong>Technique</strong> REST APIs + relational modeling</span>
+<div class="project-detail-hero">
+  <p class="project-eyebrow">Full-stack Engineering / APIs / Relational Data</p>
+  <p class="project-hero-copy">A centralized platform for employer engagement workflows, including contact management, event registration, and student announcements.</p>
+  <div class="project-detail-meta">
+    <span><strong>Focus</strong> Employer workflows</span>
+    <span><strong>Data</strong> Contacts, memberships, events</span>
+    <span><strong>Stack</strong> Flask, Node.js, Express, MySQL</span>
+  </div>
 </div>
 
-## Ingredients
+## Overview
 
-- Python
-- Node.js
-- Express
-- Flask
-- MySQL
-- REST API architecture
-- Authentication and authorization flows
-- RBAC and validation rules
+CS Source JobHub was built to improve how employers connect with Virginia Tech computer science students. Instead of relying on scattered communication channels and manual coordination, the platform brings core employer workflows into one interface.
 
-## Serve With
+I worked on updates for contact management, event signup integration, student announcement creation, and a smoother employer login experience.
+
+## Technical Work
+
+- Built backend and API functionality for employer registration, contact records, and membership-related workflows.
+- Used Flask, Node.js, Express, and MySQL to support reliable CRUD behavior across user and employer data.
+- Helped structure authentication and authorization flows around role-based access needs.
+- Integrated event signup and announcement workflows into the employer-facing experience.
+- Incorporated user-testing feedback around load performance, navigation, and common workflow clarity.
+
+## Outcome
+
+- Consolidated employer engagement actions into a clearer platform experience.
+- Improved the maintainability of backend workflows through structured API and relational data design.
+- Supported a smoother experience for employer representatives managing student-facing opportunities.
+
+## Links
 
 - Report: [CS_Source_Jobhub.pdf](/static/attachments/CS_Source_Jobhub.pdf)

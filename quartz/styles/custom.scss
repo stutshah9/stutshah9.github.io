@@ -2185,6 +2185,119 @@ article.maya-home .maya-project-link.internal {
   text-transform: uppercase;
 }
 
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) {
+  background: #f0f7ff;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .center {
+  max-width: min(100vw - 2rem, 1080px);
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .center > article {
+  padding: 4.5rem 0 5rem;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .page-title {
+  margin-bottom: 1.2rem;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .page-title a {
+  color: #2b2b2b;
+  font-family: var(--headerFont);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.05;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .tags {
+  margin-bottom: 1.4rem;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) .tags a.internal.tag-link {
+  border: 1px solid rgba(45, 45, 45, 0.16);
+  background: rgba(255, 255, 255, 0.65);
+  color: #4a4a4a;
+  font-family: var(--headerFont);
+  font-size: 0.68rem;
+  line-height: 1.2;
+}
+
+.project-detail-hero {
+  margin: 1rem 0 2rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(74, 74, 74, 0.18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 24px rgba(45, 45, 45, 0.05);
+}
+
+.project-eyebrow {
+  margin: 0 0 0.8rem;
+  color: #4a4a4a;
+  font-family: var(--headerFont);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.project-hero-copy {
+  max-width: 760px;
+  margin: 0;
+  color: #3f3a35;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.project-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+}
+
+.project-detail-meta span {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(45, 45, 45, 0.14);
+  border-radius: 6px;
+  background: rgba(240, 247, 255, 0.72);
+  color: #5b554f;
+  line-height: 1.45;
+}
+
+.project-detail-meta strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #2d2d2d;
+  font-family: var(--headerFont);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) article > h2 {
+  margin-top: 2.2rem;
+  color: #2b2b2b;
+  font-family: var(--headerFont);
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) article > p,
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) article > ul {
+  max-width: 860px;
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) article > ul {
+  padding: 1.1rem 1.3rem 1.1rem 2.2rem;
+  border: 1px solid rgba(74, 74, 74, 0.16);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+body[data-slug^="projects/"]:not([data-slug="projects/index"]) article > ul li {
+  margin: 0.45rem 0;
+}
+
 article.maya-home .maya-feature-exact {
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);

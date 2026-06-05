@@ -7,30 +7,36 @@ tags:
   - ml
 ---
 
-## Why I Cooked This
-
-The core problem in this project was that many shelf analytics pipelines identify products but ignore empty shelf zones, which are often the more operationally important signal for restocking and compliance checks. If empty space is not modeled explicitly, downstream teams still need manual review to understand planogram gaps. I designed this project to bridge that gap by treating product presence and shelf emptiness as first-class outputs in the same detection workflow.
-
-## Method
-
-I built an end-to-end YOLOv8 pipeline with curated public datasets, class-aware training setup, and inference outputs formatted for shelf-level review rather than only bounding-box counts. The system was structured to support retraining as layout patterns or image distributions change, so it can evolve instead of becoming a one-time demo model. This made the output more actionable for compliance and restocking contexts and provided a cleaner foundation for expanding to additional categories or store conditions.
-
-<div class="recipe-meta">
-  <span><strong>Yield</strong> Shelf-compliance insights</span>
-  <span><strong>Primary signals</strong> Shelf imagery + planograms</span>
-  <span><strong>Technique</strong> YOLOv8 + CV post-processing</span>
+<div class="project-detail-hero">
+  <p class="project-eyebrow">Computer Vision / Object Detection / Retail Analytics</p>
+  <p class="project-hero-copy">An object detection pipeline for shelf monitoring that identifies products and empty shelf spaces to support planogram compliance workflows.</p>
+  <div class="project-detail-meta">
+    <span><strong>Focus</strong> Shelf compliance</span>
+    <span><strong>Signals</strong> Shelf imagery + planograms</span>
+    <span><strong>Modeling</strong> YOLOv8 detection pipeline</span>
+  </div>
 </div>
 
-## Ingredients
+## Overview
 
-- Python
-- YOLOv8
-- Computer vision training/inference pipeline
-- Dataset curation and label preparation
-- Detection post-processing for shelf-level outputs
-- Visual output review for compliance workflows
+Many shelf analytics workflows identify products but miss empty shelf regions, which are often the more actionable signal for restocking and compliance. This project treats product presence and empty shelf space as first-class detection outputs.
 
-## Serve With
+I built an end-to-end YOLOv8 workflow with curated datasets, class-aware training, and inference outputs designed for shelf-level review rather than only bounding-box counts.
+
+## Technical Work
+
+- Curated and prepared shelf imagery for object detection training and validation.
+- Configured YOLOv8 training for product and empty-space detection classes.
+- Built an inference flow that formats detections for shelf-level compliance review.
+- Structured the pipeline so additional categories and store layouts can be added through retraining.
+- Reviewed visual outputs to validate detection quality and identify failure cases.
+
+## Outcome
+
+- Produced a more actionable shelf-monitoring workflow by modeling empty spaces explicitly.
+- Reduced the need for manual review when identifying planogram gaps.
+- Created a foundation for expanding detection coverage across additional retail categories.
+
+## Links
 
 - GitHub: [out-of-stock-detection](https://github.com/yoonlee201/out-of-stock-detection)
-<!-- - Report: [TODO - add report link](https://example.com/TODO-yolov8-report) -->
